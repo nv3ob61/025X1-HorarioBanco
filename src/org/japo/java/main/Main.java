@@ -24,8 +24,7 @@ import java.util.Scanner;
  * @author mon_mo
  */
 public class Main {
-
-// Instanciar Scanner
+    // Instanciar Scanner
     public static final Scanner SCN
             = new Scanner(System.in, "Windows-1252")
                     .useLocale(Locale.ENGLISH).useDelimiter("\\s+");
@@ -63,7 +62,8 @@ public class Main {
             System.out.print("Mins inicio.......: ");
             mUsr = SCN.nextInt();
             SCN.nextLine();
-
+            
+            //Una vez validado el tiempo del usuario lo pasamos a minutos.
             tmpUsr = hUsr * 60 + mUsr;
 
             //Antes de decir si estamos en el horario mostramos hora Aleatorua
